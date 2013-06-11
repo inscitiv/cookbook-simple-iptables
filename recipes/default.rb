@@ -62,7 +62,7 @@ end
 
 template iptable_rules do
   source "iptables-rules.erb"
-  cookbook "simple_iptables"
+  cookbook "simple-iptables"
   notifies :run, "execute[reload-iptables]"
   action :create
 end
